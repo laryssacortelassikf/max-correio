@@ -10,21 +10,9 @@
   <main class="login-container">
     <h1>Cadastre-se</h1>
 
-    <!-- Etapa 1: Enviar código -->
-    <form id="form-envia-codigo">
+    <form id="cadastro-form">
       <input type="email" id="email-cadastro" placeholder="E-mail corporativo" required />
-      <button type="submit">Enviar código</button>
-    </form>
-
-    <!-- Etapa 2: Confirmar código - oculto inicialmente -->
-    <form id="form-confirma-codigo" style="display:none; margin-top: 1.5rem;">
-      <input type="text" id="codigo" placeholder="Digite o código recebido" required />
-      <button type="submit">Confirmar código</button>
-    </form>
-
-    <!-- Etapa 3: Criar senha - oculto inicialmente -->
-    <form id="form-cria-senha" style="display:none; margin-top: 1.5rem;">
-      <input type="password" id="senha" placeholder="Crie uma senha" required />
+      <input type="password" id="senha-cadastro" placeholder="Crie uma senha" required />
       <input type="password" id="confirma-senha" placeholder="Confirme a senha" required />
       <button type="submit">Cadastrar</button>
     </form>
@@ -34,6 +22,6 @@
     </p>
   </main>
 
-  <script src="js/auth.js" type="module"></script>
+  <script type="module" src="js/auth.js"></script>
 </body>
 </html>
