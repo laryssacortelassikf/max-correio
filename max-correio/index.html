@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Max Correio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-body">
+  <main class="login-container">
+    <h1>📮 Max Correio</h1>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="E-mail corporativo" required />
+      <input type="password" id="senha" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+      <p class="link">Não tem conta? <a href="register.html" id="mostrarCadastro">Cadastre-se</a></p>
+    </form>
+
+    <form id="cadastro-form" style="display: none;">
+      <input type="email" id="novo-email" placeholder="E-mail corporativo" required />
+      <input type="password" id="nova-senha" placeholder="Crie uma senha" required />
+      <button type="submit">Cadastrar</button>
+      <p class="link">Já tem conta? <a href="#" id="mostrarLogin">Faça login</a></p>
+    </form>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

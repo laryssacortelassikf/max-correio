@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  overflow-x: hidden;
+}
+
+/* Container de login/cadastro */
+.login-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Título */
+.login-container h1 {
+  text-align: center;
+  color: #d94f6b;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px #ff7083aa;
+}
+
+/* Inputs */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.3rem;
+  border-radius: 12px;
+  border: 2px solid #f1b2bb;
+  background-color: #fff0f3;
+  font-size: 1rem;
+  color: #6a2c3b;
+  transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #d94f6b;
+  outline: none;
+  background-color: #fff6f9;
+}
+
+/* Botão */
+.login-container button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background-color: #d94f6b;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px #ff7b92aa;
+  transition: background 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.login-container button:hover {
+  background-color: #b43e58;
+}
+
+.login-container button:active {
+  transform: scale(0.97);
+}
+
+/* Link alternar formulário */
+.login-container .link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #6a2c3b;
+}
+
+.login-container .link a {
+  color: #d94f6b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-container .link a:hover {
+  text-decoration: underline;
+}
