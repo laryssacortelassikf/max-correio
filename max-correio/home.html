@@ -1,33 +1,47 @@
+<!--
+  home.html
+  Esta é a página principal do Max Correio após login.
+  Aqui o usuário envia mensagens anônimas para outros colaboradores.
+  Também inclui animação de corações e proteção de acesso.
+-->
 <!DOCTYPE html>
-<html lang="pt-BR" >
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Max Correio</title>
-  <link rel="stylesheet" href="css/home.css" />
-</head>
-<body>
-  <div id="heart-container"></div>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Max Correio</title>
+    <!-- CSS específico da home -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- Container onde os corações animados flutuam -->
+    <div id="heart-container"></div>
 
-  <main>
-    <h1>💌 Max Correio</h1>
-    <form id="form-mensagem">
-      <label for="usuario">Para:</label>
-      <select id="usuario" required>
-        <option value="" disabled selected>Selecione um usuário</option>
-        <!-- Aqui vai popular com JS depois -->
-      </select>
+    <main>
+      <h1>💌 Max Correio</h1>
 
-      <label for="apelido">Apelido carinhoso (ou ofensivo mesmo):</label>
-      <input type="text" id="apelido" placeholder="Ex: Docinho, Anjo..." />
+      <!-- Formulário de envio de mensagens -->
+      <form id="form-mensagem">
+        <label for="usuario">Para:</label>
+        <select id="usuario" required>
+          <option value="" disabled selected>Selecione um usuário</option>
+          <!-- Populado dinamicamente via JS -->
+        </select>
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        <label for="apelido">Apelido carinhoso (ou ofensivo mesmo):</label>
+        <input type="text" id="apelido" placeholder="Ex: Docinho, Anjo..." />
 
-      <button type="submit">Enviar 💖</button>
-    </form>
-  </main>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
 
-  <script src="app.js"></script>
-</body>
+        <button type="submit">Enviar 💖</button>
+      </form>
+    </main>
+
+    <!-- Proteção contra acesso não autorizado -->
+    <script type="module" src="js/auth-guard.js"></script>
+
+    <!-- Animações e envio de mensagens -->
+    <script src="app.js"></script>
+  </body>
 </html>

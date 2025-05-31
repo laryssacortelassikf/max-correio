@@ -1,26 +1,36 @@
+<!--
+  index.html
+  Esta é a página inicial do projeto Max Correio.
+  Responsável por exibir o formulário de login dos usuários com e-mail corporativo.
+  Redireciona para home.html após login bem-sucedido.
+-->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login - Max Correio</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body class="login-body">
-  <main class="login-container">
-    <h1>📮 Max Correio</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Max Correio</title>
+    <!-- CSS global -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-container">
+      <h1>📮 Max Correio</h1>
 
-    <form id="login-form">
-      <input type="email" id="email-login" placeholder="E-mail corporativo" required />
-      <input type="password" id="senha-login" placeholder="Senha" required />
-      <button type="submit">Entrar</button>
-    </form>
+      <!-- Formulário de login -->
+      <form id="login-form">
+        <input type="email" id="email-login" placeholder="E-mail corporativo" required />
+        <input type="password" id="senha-login" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+      </form>
 
-    <p class="link" style="margin-top: 1rem;">
-      Não tem conta? <a href="register.html">Cadastre-se</a>
-    </p>
-  </main>
+      <!-- Link para cadastro -->
+      <p class="link" style="margin-top: 1rem;">
+        Não tem conta? <a href="register.html">Cadastre-se</a>
+      </p>
+    </main>
 
-  <script type="module" src="js/auth.js"></script>
-</body>
+    <!-- Script de autenticação Firebase -->
+    <script type="module" src="js/auth.js"></script>
+  </body>
 </html>

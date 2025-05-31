@@ -1,4 +1,10 @@
-/* Reset básico */
+/*<!--
+  style.css
+  CSS principal do Max Correio.
+  Contém estilos base, reaproveitados por login, cadastro e home.
+-->/*
+<style>
+/* Reset e base */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +12,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body, html {
+html, body {
   height: 100%;
   background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
   overflow-x: hidden;
 }
 
-/* Container de login/cadastro */
+/* Layout genérico de formulário */
 .login-body {
   display: flex;
   align-items: center;
@@ -25,11 +31,10 @@ body, html {
   padding: 3rem 2.5rem;
   border-radius: 18px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
 }
 
-/* Título */
 .login-container h1 {
   text-align: center;
   color: #d94f6b;
@@ -38,9 +43,9 @@ body, html {
   text-shadow: 0 2px 4px #ff7083aa;
 }
 
-/* Inputs */
 .login-container input[type="email"],
-.login-container input[type="password"] {
+.login-container input[type="password"],
+.login-container input[type="text"] {
   width: 100%;
   padding: 0.9rem 1rem;
   margin-bottom: 1.3rem;
@@ -58,7 +63,6 @@ body, html {
   background-color: #fff6f9;
 }
 
-/* Botão */
 .login-container button {
   width: 100%;
   padding: 1rem;
@@ -82,7 +86,6 @@ body, html {
   transform: scale(0.97);
 }
 
-/* Link alternar formulário */
 .login-container .link {
   text-align: center;
   margin-top: 1rem;

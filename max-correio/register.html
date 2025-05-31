@@ -1,27 +1,36 @@
+<!--
+  register.html
+  Página de cadastro de novo usuário do Max Correio.
+  Realiza validação de e-mail corporativo e cria conta com Firebase Auth.
+-->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cadastro - Max Correio</title>
-  <link rel="stylesheet" href="css/register.css" />
-</head>
-<body class="login-body">
-  <main class="login-container">
-    <h1>Cadastre-se</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro - Max Correio</title>
+    <!-- CSS global -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-container">
+      <h1>Cadastre-se</h1>
 
-    <form id="cadastro-form">
-      <input type="email" id="email-cadastro" placeholder="E-mail corporativo" required />
-      <input type="password" id="senha-cadastro" placeholder="Crie uma senha" required />
-      <input type="password" id="confirma-senha" placeholder="Confirme a senha" required />
-      <button type="submit">Cadastrar</button>
-    </form>
+      <!-- Formulário de cadastro -->
+      <form id="cadastro-form">
+        <input type="email" id="email-cadastro" placeholder="E-mail corporativo" required />
+        <input type="password" id="senha-cadastro" placeholder="Crie uma senha" required />
+        <input type="password" id="confirma-senha" placeholder="Confirme a senha" required />
+        <button type="submit">Cadastrar</button>
+      </form>
 
-    <p class="link" style="margin-top: 1rem;">
-      Já tem conta? <a href="index.html">Faça login</a>
-    </p>
-  </main>
+      <!-- Link para login -->
+      <p class="link" style="margin-top: 1rem;">
+        Já tem conta? <a href="index.html">Faça login</a>
+      </p>
+    </main>
 
-  <script type="module" src="js/auth.js"></script>
-</body>
+    <!-- Script de autenticação Firebase -->
+    <script type="module" src="js/auth.js"></script>
+  </body>
 </html>
